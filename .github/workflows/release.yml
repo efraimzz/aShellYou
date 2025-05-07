@@ -75,7 +75,7 @@ jobs:
 
       - name: Rename APK
         run: |
-          mv "${{ env.APK_PATH }}" "aShellYou-${{ github.ref_name }}-release.apk"
+          mv "${{ env.APK_PATH }}" "aShellYou-${{ github.ref_name }}-debug.apk"
 
       - name: Install xmllint
         run: sudo apt-get install -y libxml2-utils
